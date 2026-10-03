@@ -1,0 +1,22 @@
+<html>
+<body>
+<pre>
+<h1>µVision3 Build Log</h1>
+<h2>Project:</h2>
+C:\Users\alberto\Documents\Keil\UV2\CY7C68013A-56PVXC\CypressUsb1.1\firmware\miei\EP_isochronous\firmware\EP_Interrupts.uv2
+Project File Date:  01/26/2024
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling EP_Interrupts.c...
+assembling dscr.a51...
+linking...
+Program Size: data=43.5 xdata=4473 code=2316
+creating hex file from "EP_Interrupts"...
+User command #1: "C:\Cypress\USB\CY3684_EZ-USB_FX2LP_DVK\1.1\Bin\hex2bix" -i -f 0xC2 -o EP_Interrupts.iic EP_Interrupts.hex
+Intel Hex file to EZ-USB Binary file conversion utility
+Copyright (c) 2012-2013, Cypress Semiconductor Inc.
+2357 Bytes written.
+Total Code Bytes = 2316
+Conversion completed successfully.
+"EP_Interrupts" - 0 Error(s), 0 Warning(s).
