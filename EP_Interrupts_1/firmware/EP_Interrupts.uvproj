@@ -13,13 +13,13 @@
       <uAC6>0</uAC6>
       <TargetOption>
         <TargetCommonOption>
-          <Device>EZ-USB FX2LP (CY7C68XXX-X)</Device>
+          <Device>EZ-USB FX2 (CY7C68XXX)</Device>
           <Vendor>Cypress</Vendor>
-          <Cpu>IRAM(0-0xFF) IROM(0-0x3FFF) XRAM(0xE000-0xE1FF) CLOCK(48000000) MODDP2</Cpu>
+          <Cpu>IRAM(0-0xFF) IROM(0-0x1FFF) XRAM(0xE000-0xE1FF) CLOCK(48000000) MODDP2</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
           <StartupFile>"LIB\STARTUP.A51" ("Standard 8051 Startup Code")</StartupFile>
           <FlashDriverDll></FlashDriverDll>
-          <DeviceId>3787</DeviceId>
+          <DeviceId>3205</DeviceId>
           <RegisterFile>FX2REGS.H</RegisterFile>
           <MemoryEnv></MemoryEnv>
           <Cmp></Cmp>
@@ -46,7 +46,7 @@
             <InvalidFlash>1</InvalidFlash>
           </TargetStatus>
           <OutputDirectory>.\</OutputDirectory>
-          <OutputName>EP_Interrupts</OutputName>
+          <OutputName>EP_Int</OutputName>
           <CreateExecutable>1</CreateExecutable>
           <CreateLib>0</CreateLib>
           <CreateHexFile>1</CreateHexFile>
@@ -79,7 +79,7 @@
           <AfterMake>
             <RunUserProg1>1</RunUserProg1>
             <RunUserProg2>0</RunUserProg2>
-            <UserProg1Name>"C:\Cypress\Cypress Suite USB 3.4.7\Firmware\bin\hex2bix" -i -f 0xC2 -o EP_Interrupts.iic EP_Interrupts.hex</UserProg1Name>
+            <UserProg1Name>"C:\Cypress\Cypress Suite USB 3.4.7\Firmware\bin\hex2bix" -i -f 0xC2 -o %L.iic %L.hex</UserProg1Name>
             <UserProg2Name></UserProg2Name>
             <UserProg1Dos16Mode>0</UserProg1Dos16Mode>
             <UserProg2Dos16Mode>0</UserProg2Dos16Mode>
@@ -273,7 +273,7 @@
               <IRO>
                 <Type>1</Type>
                 <StartAddress>0x0</StartAddress>
-                <Size>0x4000</Size>
+                <Size>0x2000</Size>
               </IRO>
               <IRA>
                 <Type>0</Type>

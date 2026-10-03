@@ -1,0 +1,9 @@
+"EP_Interrupts.obj",
+"fw.obj",
+"dscr.obj",
+"C:\Cypress\Cypress Suite USB 3.4.7\Firmware\lib\USBJmpTb.OBJ",
+"C:\Cypress\Cypress Suite USB 3.4.7\Firmware\lib\EZUSB.LIB" 
+TO "EP_Int" 
+RAMSIZE(256) 
+CODE( 0x80 )
+XDATA( 0x1000 )

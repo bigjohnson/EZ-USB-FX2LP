@@ -1,9 +1,0 @@
-"EP_Interrupts.obj",
-"fw.obj",
-"dscr.obj",
-"C:\Cypress\USB\CY3684_EZ-USB_FX2LP_DVK\1.1\Target\Lib\LP\USBJmpTb.OBJ",
-"C:\Cypress\USB\CY3684_EZ-USB_FX2LP_DVK\1.1\Target\Lib\LP\EZUSB.LIB" 
-TO "EP_Interrupts" 
-RAMSIZE(256) 
-CODE( 0x80 )
-XDATA( 0x1000 )

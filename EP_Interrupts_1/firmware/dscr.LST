@@ -1,4 +1,4 @@
-A51 MACRO ASSEMBLER  DSCR                                                                 10/03/2026 17:13:57 PAGE     1
+A51 MACRO ASSEMBLER  DSCR                                                                 10/03/2026 20:48:59 PAGE     1
 
 
 MACRO ASSEMBLER A51 V8.2.7.0
@@ -65,7 +65,7 @@ LOC  OBJ            LINE     SOURCE
 0010 00               55           db   0         ;; Serial number string index
 0011 01               56           db   1         ;; Number of configurations
                       57     
-A51 MACRO ASSEMBLER  DSCR                                                                 10/03/2026 17:13:57 PAGE     2
+A51 MACRO ASSEMBLER  DSCR                                                                 10/03/2026 20:48:59 PAGE     2
 
 0012                  58     DeviceQualDscr:
 0012 0A               59           db   DSCR_DEVQUAL_LEN   ;; Descriptor length
@@ -133,7 +133,7 @@ LOC  OBJ            LINE     SOURCE
 003F 03              121           db   ET_INT 
 0040 00              122           db   00H               ;; Maximun packet size (LSB)
 0041 02              123           db   02H               ;; Max packect size (MSB)
-A51 MACRO ASSEMBLER  DSCR                                                                 10/03/2026 17:13:57 PAGE     3
+A51 MACRO ASSEMBLER  DSCR                                                                 10/03/2026 20:48:59 PAGE     3
 
                      124     ;;      db   04H               ;; Max packect size (MSB)
 0042 00              125           db   00H               ;; Polling interval
@@ -201,7 +201,7 @@ LOC  OBJ            LINE     SOURCE
 006F 00              187           db   00H               ;; Max packect size (MSB)
 0070 00              188           db   00H               ;; Polling interval
                      189     
-A51 MACRO ASSEMBLER  DSCR                                                                 10/03/2026 17:13:57 PAGE     4
+A51 MACRO ASSEMBLER  DSCR                                                                 10/03/2026 20:48:59 PAGE     4
 
                      190     ;; Endpoint Descriptor
 0071 07              191           db   DSCR_ENDPNT_LEN      ;; Descriptor length
@@ -269,7 +269,7 @@ LOC  OBJ            LINE     SOURCE
 00A4 7300            253           db   's',00
 00A6 7300            254           db   's',00
 00A8                 255     StringDscr1End:
-A51 MACRO ASSEMBLER  DSCR                                                                 10/03/2026 17:13:57 PAGE     5
+A51 MACRO ASSEMBLER  DSCR                                                                 10/03/2026 20:48:59 PAGE     5
 
                      256     
 00A8                 257     StringDscr2:   
@@ -294,7 +294,7 @@ LOC  OBJ            LINE     SOURCE
 00C4 0000            276           dw   0000H
                      277           end
                                    
-A51 MACRO ASSEMBLER  DSCR                                                                 10/03/2026 17:13:57 PAGE     6
+A51 MACRO ASSEMBLER  DSCR                                                                 10/03/2026 20:48:59 PAGE     6
 
 SYMBOL TABLE LISTING
 ------ ----- -------

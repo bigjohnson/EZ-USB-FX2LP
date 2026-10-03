@@ -1,9 +1,9 @@
-A51 MACRO ASSEMBLER  DSCR                                                                 01/26/2024 23:40:16 PAGE     1
+A51 MACRO ASSEMBLER  DSCR                                                                 10/03/2026 20:48:41 PAGE     1
 
 
-MACRO ASSEMBLER A51 V7.10
+MACRO ASSEMBLER A51 V8.2.7.0
 OBJECT MODULE PLACED IN dscr.OBJ
-ASSEMBLER INVOKED BY: C:\Keil\C51\BIN\A51.EXE dscr.a51 SET(SMALL) DEBUG EP
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE dscr.a51 SET(SMALL) DEBUG EP
 
 LOC  OBJ            LINE     SOURCE
 
@@ -65,7 +65,7 @@ LOC  OBJ            LINE     SOURCE
 0010 00               55           db   0         ;; Serial number string index
 0011 01               56           db   1         ;; Number of configurations
                       57     
-A51 MACRO ASSEMBLER  DSCR                                                                 01/26/2024 23:40:16 PAGE     2
+A51 MACRO ASSEMBLER  DSCR                                                                 10/03/2026 20:48:41 PAGE     2
 
 0012                  58     DeviceQualDscr:
 0012 0A               59           db   DSCR_DEVQUAL_LEN   ;; Descriptor length
@@ -133,7 +133,7 @@ LOC  OBJ            LINE     SOURCE
                      121     ;;      db   ET_BULK            ;; Endpoint type
                      122     ;;      db   ET_INT
 003F 01              123           db   ET_ISO 
-A51 MACRO ASSEMBLER  DSCR                                                                 01/26/2024 23:40:16 PAGE     3
+A51 MACRO ASSEMBLER  DSCR                                                                 10/03/2026 20:48:41 PAGE     3
 
 0040 00              124           db   00H               ;; Maximun packet size (LSB)
                      125     ;;      db   02H               ;; Max packect size (MSB)
@@ -201,7 +201,7 @@ LOC  OBJ            LINE     SOURCE
 005E 01              187           db   01H               ;; Endpoint number, and direction
 005F 02              188           db   ET_BULK            ;; Endpoint type
 0060 40              189           db   40H               ;; Maximun packet size (LSB)
-A51 MACRO ASSEMBLER  DSCR                                                                 01/26/2024 23:40:16 PAGE     4
+A51 MACRO ASSEMBLER  DSCR                                                                 10/03/2026 20:48:41 PAGE     4
 
 0061 00              190           db   00H               ;; Max packect size (MSB)
 0062 00              191           db   00H               ;; Polling interval
@@ -269,7 +269,7 @@ LOC  OBJ            LINE     SOURCE
 0090 7000            253           db   'p',00
 0092 7200            254           db   'r',00
 0094 6500            255           db   'e',00
-A51 MACRO ASSEMBLER  DSCR                                                                 01/26/2024 23:40:16 PAGE     5
+A51 MACRO ASSEMBLER  DSCR                                                                 10/03/2026 20:48:41 PAGE     5
 
 0096 7300            256           db   's',00
 0098 7300            257           db   's',00
@@ -297,7 +297,7 @@ LOC  OBJ            LINE     SOURCE
 00B6 0000            279           dw   0000H
                      280           end
                                    
-A51 MACRO ASSEMBLER  DSCR                                                                 01/26/2024 23:40:16 PAGE     6
+A51 MACRO ASSEMBLER  DSCR                                                                 10/03/2026 20:48:41 PAGE     6
 
 SYMBOL TABLE LISTING
 ------ ----- -------

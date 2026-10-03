@@ -1,4 +1,4 @@
-C51 COMPILER V9.60.7.0   EP_INTERRUPTS                                                     10/03/2026 17:13:57 PAGE 1   
+C51 COMPILER V9.60.7.0   EP_INTERRUPTS                                                     10/03/2026 20:48:59 PAGE 1   
 
 
 C51 COMPILER V9.60.7.0, COMPILATION OF MODULE EP_INTERRUPTS
@@ -62,7 +62,7 @@ line level    source
   52   1      
   53   1        // default: all endpoints have their VALID bit set
   54   1        // default: TYPE1 = 1 and TYPE0 = 0 --> BULK  
-C51 COMPILER V9.60.7.0   EP_INTERRUPTS                                                     10/03/2026 17:13:57 PAGE 2   
+C51 COMPILER V9.60.7.0   EP_INTERRUPTS                                                     10/03/2026 20:48:59 PAGE 2   
 
   55   1        // default: EP2 and EP4 DIR bits are 0 (OUT direction)
   56   1        // default: EP6 and EP8 DIR bits are 1 (IN direction)
@@ -126,7 +126,7 @@ line level    source
  114          {
  115   1         return(TRUE);
  116   1      }
-C51 COMPILER V9.60.7.0   EP_INTERRUPTS                                                     10/03/2026 17:13:57 PAGE 3   
+C51 COMPILER V9.60.7.0   EP_INTERRUPTS                                                     10/03/2026 20:48:59 PAGE 3   
 
  117          
  118          BOOL DR_SetConfiguration(void)   // Called when a Set Configuration command is received
@@ -190,7 +190,7 @@ line level    source
  176   2              SYNCDELAY;                    
  177   2              FIFORESET = tmp;
  178   2              break;
-C51 COMPILER V9.60.7.0   EP_INTERRUPTS                                                     10/03/2026 17:13:57 PAGE 4   
+C51 COMPILER V9.60.7.0   EP_INTERRUPTS                                                     10/03/2026 20:48:59 PAGE 4   
 
  179   2           default:
  180   2              return(TRUE);
@@ -254,7 +254,7 @@ line level    source
  238   2            ((CONFIGDSCR xdata *) pOtherConfigDscr)->type = OTHERSPEED_DSCR;
  239   2         }
  240   1      
-C51 COMPILER V9.60.7.0   EP_INTERRUPTS                                                     10/03/2026 17:13:57 PAGE 5   
+C51 COMPILER V9.60.7.0   EP_INTERRUPTS                                                     10/03/2026 20:48:59 PAGE 5   
 
  241   1         EZUSB_IRQ_CLEAR();
  242   1         USBIRQ = bmHSGRANT;
@@ -318,7 +318,7 @@ line level    source
  300   2            {
  301   3               // setup to transfer EP2OUT buffer to EP6IN buffer using AUTOPOINTER(s)
  302   3               EXTAUTODAT2 = EXTAUTODAT1;
-C51 COMPILER V9.60.7.0   EP_INTERRUPTS                                                     10/03/2026 17:13:57 PAGE 6   
+C51 COMPILER V9.60.7.0   EP_INTERRUPTS                                                     10/03/2026 20:48:59 PAGE 6   
 
  303   3            }
  304   2            EP6BCH = EP2BCH;  
@@ -382,7 +382,7 @@ line level    source
  362   1        EPIRQ = bmBIT7;
  363   1      }
  364          
-C51 COMPILER V9.60.7.0   EP_INTERRUPTS                                                     10/03/2026 17:13:57 PAGE 7   
+C51 COMPILER V9.60.7.0   EP_INTERRUPTS                                                     10/03/2026 20:48:59 PAGE 7   
 
  365          void ISR_Ibn(void) interrupt 0
  366          {
@@ -446,7 +446,7 @@ line level    source
  424   1      }
  425          void ISR_Ep2fflag(void) interrupt 0
  426          {
-C51 COMPILER V9.60.7.0   EP_INTERRUPTS                                                     10/03/2026 17:13:57 PAGE 8   
+C51 COMPILER V9.60.7.0   EP_INTERRUPTS                                                     10/03/2026 20:48:59 PAGE 8   
 
  427   1      }
  428          void ISR_Ep4fflag(void) interrupt 0
