@@ -4,4 +4,4 @@
 
 ![board](s-l1600.jpg)
 
-You need [dd](https://github.com/bigjohnson/WaybackMachine/raw/refs/heads/main/Cypress/CySuiteUSB_3_4_7_B204.exe) Cypress USB FX2LP development package.
+You need [CySuiteUSB_3_4_7_B204.exe](https://github.com/bigjohnson/WaybackMachine/raw/refs/heads/main/Cypress/CySuiteUSB_3_4_7_B204.exe) Cypress USB FX2LP development package.
