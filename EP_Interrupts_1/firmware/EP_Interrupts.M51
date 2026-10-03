@@ -1,10 +1,10 @@
-BL51 BANKED LINKER/LOCATER V5.11                                                        01/26/2024  23:30:14  PAGE 1
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                    10/03/2026  17:13:57  PAGE 1
 
 
-BL51 BANKED LINKER/LOCATER V5.11, INVOKED BY:
-C:\KEIL\C51\BIN\BL51.EXE EP_Interrupts.obj, fw.obj, dscr.obj, C:\Cypress\USB\CY3684_EZ-USB_FX2LP_DVK\1.1\Target\Lib\LP\U
->> SBJmpTb.OBJ, C:\Cypress\USB\CY3684_EZ-USB_FX2LP_DVK\1.1\Target\Lib\LP\EZUSB.LIB TO EP_Interrupts RAMSIZE (256) CODE (
->> 0X80) XDATA (0X1000)
+BL51 BANKED LINKER/LOCATER V6.22.4.0, INVOKED BY:
+C:\KEIL_V5\C51\BIN\BL51.EXE EP_Interrupts.obj, fw.obj, dscr.obj, C:\Cypress\Cypress Suite USB 3.4.7\Firmware\lib\USBJmpT
+>> b.OBJ, C:\Cypress\Cypress Suite USB 3.4.7\Firmware\lib\EZUSB.LIB TO EP_Interrupts RAMSIZE (256) CODE (0X80) XDATA (0X
+>> 1000)
 
 
 MEMORY MODEL: SMALL
@@ -14,16 +14,16 @@ INPUT MODULES INCLUDED:
   EP_Interrupts.obj (EP_INTERRUPTS)
   fw.obj (FW)
   dscr.obj (DSCR)
-  C:\Cypress\USB\CY3684_EZ-USB_FX2LP_DVK\1.1\Target\Lib\LP\USBJmpTb.OBJ (USBJMPTBL)
-  C:\Cypress\USB\CY3684_EZ-USB_FX2LP_DVK\1.1\Target\Lib\LP\EZUSB.LIB (RESUME)
-  C:\Cypress\USB\CY3684_EZ-USB_FX2LP_DVK\1.1\Target\Lib\LP\EZUSB.LIB (DISCON)
-  C:\Cypress\USB\CY3684_EZ-USB_FX2LP_DVK\1.1\Target\Lib\LP\EZUSB.LIB (EZREGS)
-  C:\Cypress\USB\CY3684_EZ-USB_FX2LP_DVK\1.1\Target\Lib\LP\EZUSB.LIB (GET_STRD)
-  C:\Cypress\USB\CY3684_EZ-USB_FX2LP_DVK\1.1\Target\Lib\LP\EZUSB.LIB (SUSP)
-  C:\Cypress\USB\CY3684_EZ-USB_FX2LP_DVK\1.1\Target\Lib\LP\EZUSB.LIB (DELAY)
-  C:\Cypress\USB\CY3684_EZ-USB_FX2LP_DVK\1.1\Target\Lib\LP\EZUSB.LIB (DELAY1MS)
-  C:\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
-  C:\KEIL\C51\LIB\C51S.LIB (?C?ULCMP)
+  C:\Cypress\Cypress Suite USB 3.4.7\Firmware\lib\USBJmpTb.OBJ (USBJMPTBL)
+  C:\Cypress\Cypress Suite USB 3.4.7\Firmware\lib\EZUSB.LIB (RESUME)
+  C:\Cypress\Cypress Suite USB 3.4.7\Firmware\lib\EZUSB.LIB (DISCON)
+  C:\Cypress\Cypress Suite USB 3.4.7\Firmware\lib\EZUSB.LIB (EZREGS)
+  C:\Cypress\Cypress Suite USB 3.4.7\Firmware\lib\EZUSB.LIB (GET_STRD)
+  C:\Cypress\Cypress Suite USB 3.4.7\Firmware\lib\EZUSB.LIB (SUSP)
+  C:\Cypress\Cypress Suite USB 3.4.7\Firmware\lib\EZUSB.LIB (DELAY)
+  C:\Cypress\Cypress Suite USB 3.4.7\Firmware\lib\EZUSB.LIB (DELAY1MS)
+  C:\KEIL_V5\C51\LIB\C51S.LIB (?C_STARTUP)
+  C:\KEIL_V5\C51\LIB\C51S.LIB (?C?ULCMP)
 
 
 LINK MAP OF MODULE:  EP_Interrupts (EP_INTERRUPTS)
@@ -48,9 +48,9 @@ LINK MAP OF MODULE:  EP_Interrupts (EP_INTERRUPTS)
             XDATA   E400H     0001H     ABSOLUTE     
                     E401H     007FH                  *** GAP ***
             XDATA   E480H     0001H     ABSOLUTE     
-                    E481H     0088H                  *** GAP ***
-            XDATA   E509H     0001H     ABSOLUTE     
-                    E50AH     00F6H                  *** GAP ***
+                    E481H     008CH                  *** GAP ***
+            XDATA   E50DH     0001H     ABSOLUTE     
+                    E50EH     00F2H                  *** GAP ***
             XDATA   E600H     0001H     ABSOLUTE     
             XDATA   E601H     0001H     ABSOLUTE     
             XDATA   E602H     0001H     ABSOLUTE     
@@ -59,7 +59,7 @@ LINK MAP OF MODULE:  EP_Interrupts (EP_INTERRUPTS)
             XDATA   E605H     0001H     ABSOLUTE     
             XDATA   E606H     0001H     ABSOLUTE     
             XDATA   E607H     0001H     ABSOLUTE     
-BL51 BANKED LINKER/LOCATER V5.11                                                      01/26/2024  23:30:14  PAGE 2
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  10/03/2026  17:13:57  PAGE 2
 
 
             XDATA   E608H     0001H     ABSOLUTE     
@@ -119,7 +119,7 @@ LINK MAP OF MODULE:  EP_Interrupts (EP_INTERRUPTS)
             XDATA   E653H     0001H     ABSOLUTE     
             XDATA   E654H     0001H     ABSOLUTE     
             XDATA   E655H     0001H     ABSOLUTE     
-BL51 BANKED LINKER/LOCATER V5.11                                                      01/26/2024  23:30:14  PAGE 3
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  10/03/2026  17:13:57  PAGE 3
 
 
             XDATA   E656H     0001H     ABSOLUTE     
@@ -179,7 +179,7 @@ LINK MAP OF MODULE:  EP_Interrupts (EP_INTERRUPTS)
             XDATA   E699H     0001H     ABSOLUTE     
                     E69AH     0002H                  *** GAP ***
             XDATA   E69CH     0001H     ABSOLUTE     
-BL51 BANKED LINKER/LOCATER V5.11                                                      01/26/2024  23:30:14  PAGE 4
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  10/03/2026  17:13:57  PAGE 4
 
 
             XDATA   E69DH     0001H     ABSOLUTE     
@@ -239,7 +239,7 @@ LINK MAP OF MODULE:  EP_Interrupts (EP_INTERRUPTS)
             XDATA   E6E4H     0001H     ABSOLUTE     
                     E6E5H     0005H                  *** GAP ***
             XDATA   E6EAH     0001H     ABSOLUTE     
-BL51 BANKED LINKER/LOCATER V5.11                                                      01/26/2024  23:30:14  PAGE 5
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  10/03/2026  17:13:57  PAGE 5
 
 
             XDATA   E6EBH     0001H     ABSOLUTE     
@@ -299,7 +299,7 @@ LINK MAP OF MODULE:  EP_Interrupts (EP_INTERRUPTS)
             CODE    08F5H     0025H     UNIT         EZUSB
             CODE    091AH     001CH     UNIT         ?PR?ISR_EP1IN?EP_INTERRUPTS
             CODE    0936H     001CH     UNIT         ?PR?ISR_EP6INOUT?EP_INTERRUPTS
-BL51 BANKED LINKER/LOCATER V5.11                                                      01/26/2024  23:30:14  PAGE 6
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  10/03/2026  17:13:57  PAGE 6
 
 
             CODE    0952H     001AH     UNIT         ?PR?ISR_EP8INOUT?EP_INTERRUPTS
@@ -359,54 +359,8 @@ OVERLAY MAP OF MODULE:   EP_Interrupts (EP_INTERRUPTS)
 SEGMENT                                          BIT_GROUP          DATA_GROUP 
   +--> CALLED SEGMENT                         START    LENGTH     START    LENGTH
 ---------------------------------------------------------------------------------
-BL51 BANKED LINKER/LOCATER V5.11                                                      01/26/2024  23:30:14  PAGE 7
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  10/03/2026  17:13:57  PAGE 7
 
-
-?PR?USB_JUMP_TABLE?USBJT                      -----    -----      -----    -----
-  +--> ?PR?ISR_SUDAV?EP_INTERRUPTS
-  +--> ?PR?ISR_SOF?EP_INTERRUPTS
-  +--> ?PR?ISR_SUTOK?EP_INTERRUPTS
-  +--> ?PR?ISR_SUSP?EP_INTERRUPTS
-  +--> ?PR?ISR_URES?EP_INTERRUPTS
-  +--> ?PR?ISR_HIGHSPEED?EP_INTERRUPTS
-  +--> ?PR?ISR_EP0ACK?EP_INTERRUPTS
-  +--> ?PR?ISR_STUB?EP_INTERRUPTS
-  +--> ?PR?ISR_EP0IN?EP_INTERRUPTS
-  +--> ?PR?ISR_EP0OUT?EP_INTERRUPTS
-  +--> ?PR?ISR_EP1IN?EP_INTERRUPTS
-  +--> ?PR?ISR_EP1OUT?EP_INTERRUPTS
-  +--> ?PR?ISR_EP2INOUT?EP_INTERRUPTS
-  +--> ?PR?ISR_EP4INOUT?EP_INTERRUPTS
-  +--> ?PR?ISR_EP6INOUT?EP_INTERRUPTS
-  +--> ?PR?ISR_EP8INOUT?EP_INTERRUPTS
-  +--> ?PR?ISR_IBN?EP_INTERRUPTS
-  +--> ?PR?ISR_EP0PINGNAK?EP_INTERRUPTS
-  +--> ?PR?ISR_EP1PINGNAK?EP_INTERRUPTS
-  +--> ?PR?ISR_EP2PINGNAK?EP_INTERRUPTS
-  +--> ?PR?ISR_EP4PINGNAK?EP_INTERRUPTS
-  +--> ?PR?ISR_EP6PINGNAK?EP_INTERRUPTS
-  +--> ?PR?ISR_EP8PINGNAK?EP_INTERRUPTS
-  +--> ?PR?ISR_ERRORLIMIT?EP_INTERRUPTS
-  +--> ?PR?ISR_EP2PIDERROR?EP_INTERRUPTS
-  +--> ?PR?ISR_EP4PIDERROR?EP_INTERRUPTS
-  +--> ?PR?ISR_EP6PIDERROR?EP_INTERRUPTS
-  +--> ?PR?ISR_EP8PIDERROR?EP_INTERRUPTS
-  +--> ?PR?ISR_EP2PFLAG?EP_INTERRUPTS
-  +--> ?PR?ISR_EP4PFLAG?EP_INTERRUPTS
-  +--> ?PR?ISR_EP6PFLAG?EP_INTERRUPTS
-  +--> ?PR?ISR_EP8PFLAG?EP_INTERRUPTS
-  +--> ?PR?ISR_EP2EFLAG?EP_INTERRUPTS
-  +--> ?PR?ISR_EP4EFLAG?EP_INTERRUPTS
-  +--> ?PR?ISR_EP6EFLAG?EP_INTERRUPTS
-  +--> ?PR?ISR_EP8EFLAG?EP_INTERRUPTS
-  +--> ?PR?ISR_EP2FFLAG?EP_INTERRUPTS
-  +--> ?PR?ISR_EP4FFLAG?EP_INTERRUPTS
-  +--> ?PR?ISR_EP6FFLAG?EP_INTERRUPTS
-  +--> ?PR?ISR_EP8FFLAG?EP_INTERRUPTS
-  +--> ?PR?ISR_GPIFCOMPLETE?EP_INTERRUPTS
-  +--> ?PR?ISR_GPIFWAVEFORM?EP_INTERRUPTS
-
-*** NEW ROOT ***************************************************
 
 ?C_C51STARTUP                                 -----    -----      -----    -----
   +--> ?PR?MAIN?FW
@@ -419,9 +373,6 @@ SEGMENT                                          BIT_GROUP          DATA_GROUP
   +--> ?PR?TD_SUSPEND?EP_INTERRUPTS
   +--> ?PR?EZUSB_RESUME?RESUME
   +--> ?PR?TD_RESUME?EP_INTERRUPTS
-BL51 BANKED LINKER/LOCATER V5.11                                                      01/26/2024  23:30:14  PAGE 8
-
-
 
 ?PR?EZUSB_DISCON?DISCON                       0020H.4  0000H.1    -----    -----
   +--> ?PR?_EZUSB_DELAY?DELAY
@@ -468,6 +419,9 @@ SYMBOL TABLE OF MODULE:  EP_Interrupts (EP_INTERRUPTS)
   C:0A32H         PUBLIC        ISR_Ep0pingnak
   C:0A33H         PUBLIC        ISR_Ep1pingnak
   C:0A4AH         PUBLIC        ISR_GpifWaveform
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  10/03/2026  17:13:57  PAGE 8
+
+
   C:0A39H         PUBLIC        ISR_Ep2piderror
   C:0A34H         PUBLIC        ISR_Ep2pingnak
   C:0A3AH         PUBLIC        ISR_Ep4piderror
@@ -479,9 +433,6 @@ SYMBOL TABLE OF MODULE:  EP_Interrupts (EP_INTERRUPTS)
   C:0A37H         PUBLIC        ISR_Ep8pingnak
   D:009AH         PUBLIC        AUTOPTRH1
   D:009DH         PUBLIC        AUTOPTRH2
-BL51 BANKED LINKER/LOCATER V5.11                                                      01/26/2024  23:30:14  PAGE 9
-
-
   D:0091H         PUBLIC        EXIF
   C:09DAH         PUBLIC        DR_GetInterface
   D:009BH         PUBLIC        AUTOPTRL1
@@ -528,6 +479,9 @@ SYMBOL TABLE OF MODULE:  EP_Interrupts (EP_INTERRUPTS)
   C:074AH         LINE#         34
   C:0751H         LINE#         60
   C:0757H         LINE#         61
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  10/03/2026  17:13:57  PAGE 9
+
+
   C:075BH         LINE#         62
   C:075EH         LINE#         63
   C:0764H         LINE#         64
@@ -539,9 +493,6 @@ SYMBOL TABLE OF MODULE:  EP_Interrupts (EP_INTERRUPTS)
   C:077FH         LINE#         72
   C:0785H         LINE#         74
   C:0788H         LINE#         75
-BL51 BANKED LINKER/LOCATER V5.11                                                      01/26/2024  23:30:14  PAGE 10
-
-
   C:078EH         LINE#         76
   C:0791H         LINE#         77
   C:0792H         LINE#         78
@@ -588,6 +539,9 @@ SYMBOL TABLE OF MODULE:  EP_Interrupts (EP_INTERRUPTS)
   C:09C8H         LINE#         124
   C:09C8H         LINE#         125
   C:09C8H         LINE#         126
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  10/03/2026  17:13:57  PAGE 10
+
+
   C:09CEH         LINE#         127
   C:09D3H         LINE#         128
   C:09D8H         LINE#         129
@@ -599,9 +553,6 @@ SYMBOL TABLE OF MODULE:  EP_Interrupts (EP_INTERRUPTS)
   C:0A1AH         LINE#         134
   C:0A20H         LINE#         135
   C:0A21H         LINE#         136
-BL51 BANKED LINKER/LOCATER V5.11                                                      01/26/2024  23:30:14  PAGE 11
-
-
   -------         ENDPROC       DR_SETINTERFACE
   -------         PROC          DR_GETINTERFACE
   C:09DAH         LINE#         138
@@ -648,6 +599,9 @@ SYMBOL TABLE OF MODULE:  EP_Interrupts (EP_INTERRUPTS)
   C:08E2H         LINE#         174
   C:08E7H         LINE#         175
   C:08EAH         LINE#         176
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  10/03/2026  17:13:57  PAGE 11
+
+
   C:08EDH         LINE#         177
   C:08EFH         LINE#         178
   C:08F1H         LINE#         179
@@ -659,9 +613,6 @@ SYMBOL TABLE OF MODULE:  EP_Interrupts (EP_INTERRUPTS)
   -------         PROC          ISR_SUDAV
   C:096CH         LINE#         192
   C:0972H         LINE#         194
-BL51 BANKED LINKER/LOCATER V5.11                                                      01/26/2024  23:30:14  PAGE 12
-
-
   C:0974H         LINE#         195
   C:0977H         LINE#         196
   C:097DH         LINE#         197
@@ -708,6 +659,9 @@ SYMBOL TABLE OF MODULE:  EP_Interrupts (EP_INTERRUPTS)
   C:083AH         LINE#         242
   C:0840H         LINE#         243
   -------         ENDPROC       ISR_HIGHSPEED
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  10/03/2026  17:13:57  PAGE 12
+
+
   -------         PROC          ISR_EP0ACK
   C:0A2DH         LINE#         244
   C:0A2DH         LINE#         246
@@ -719,9 +673,6 @@ SYMBOL TABLE OF MODULE:  EP_Interrupts (EP_INTERRUPTS)
   -------         PROC          ISR_EP0IN
   C:0A2FH         LINE#         250
   C:0A2FH         LINE#         252
-BL51 BANKED LINKER/LOCATER V5.11                                                      01/26/2024  23:30:14  PAGE 13
-
-
   -------         ENDPROC       ISR_EP0IN
   -------         PROC          ISR_EP0OUT
   C:0A30H         LINE#         253
@@ -768,6 +719,9 @@ SYMBOL TABLE OF MODULE:  EP_Interrupts (EP_INTERRUPTS)
   C:06E4H         LINE#         296
   C:06F5H         LINE#         299
   C:06FEH         LINE#         300
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  10/03/2026  17:13:57  PAGE 13
+
+
   C:06FEH         LINE#         302
   C:0706H         LINE#         303
   C:070DH         LINE#         304
@@ -779,9 +733,6 @@ SYMBOL TABLE OF MODULE:  EP_Interrupts (EP_INTERRUPTS)
   C:0726H         LINE#         311
   C:072CH         LINE#         312
   -------         ENDPROC       ISR_EP2INOUT
-BL51 BANKED LINKER/LOCATER V5.11                                                      01/26/2024  23:30:14  PAGE 14
-
-
   -------         PROC          ISR_EP4INOUT
   -------         DO            
   D:0006H         SYMBOL        count
@@ -828,6 +779,9 @@ SYMBOL TABLE OF MODULE:  EP_Interrupts (EP_INTERRUPTS)
   -------         PROC          ISR_IBN
   C:0A31H         LINE#         365
   C:0A31H         LINE#         367
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  10/03/2026  17:13:57  PAGE 14
+
+
   -------         ENDPROC       ISR_IBN
   -------         PROC          ISR_EP0PINGNAK
   C:0A32H         LINE#         368
@@ -839,9 +793,6 @@ SYMBOL TABLE OF MODULE:  EP_Interrupts (EP_INTERRUPTS)
   -------         ENDPROC       ISR_EP1PINGNAK
   -------         PROC          ISR_EP2PINGNAK
   C:0A34H         LINE#         374
-BL51 BANKED LINKER/LOCATER V5.11                                                      01/26/2024  23:30:14  PAGE 15
-
-
   C:0A34H         LINE#         376
   -------         ENDPROC       ISR_EP2PINGNAK
   -------         PROC          ISR_EP4PINGNAK
@@ -888,6 +839,9 @@ SYMBOL TABLE OF MODULE:  EP_Interrupts (EP_INTERRUPTS)
   C:0A3FH         LINE#         407
   C:0A3FH         LINE#         409
   -------         ENDPROC       ISR_EP6PFLAG
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  10/03/2026  17:13:57  PAGE 15
+
+
   -------         PROC          ISR_EP8PFLAG
   C:0A40H         LINE#         410
   C:0A40H         LINE#         412
@@ -899,9 +853,6 @@ SYMBOL TABLE OF MODULE:  EP_Interrupts (EP_INTERRUPTS)
   -------         PROC          ISR_EP4EFLAG
   C:0A42H         LINE#         416
   C:0A42H         LINE#         418
-BL51 BANKED LINKER/LOCATER V5.11                                                      01/26/2024  23:30:14  PAGE 16
-
-
   -------         ENDPROC       ISR_EP4EFLAG
   -------         PROC          ISR_EP6EFLAG
   C:0A43H         LINE#         419
@@ -948,6 +899,9 @@ SYMBOL TABLE OF MODULE:  EP_Interrupts (EP_INTERRUPTS)
   B:00E8H.0       PUBLIC        EUSB
   C:05FCH         PUBLIC        resume_isr
   D:0021H         PUBLIC        pHighSpeedConfigDscr
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  10/03/2026  17:13:57  PAGE 16
+
+
   D:0023H         PUBLIC        pDeviceDscr
   C:0080H         PUBLIC        SetupCommand
   D:0025H         PUBLIC        pConfigDscr
@@ -959,9 +913,6 @@ SYMBOL TABLE OF MODULE:  EP_Interrupts (EP_INTERRUPTS)
   D:008EH         PUBLIC        CKCON
   D:002DH         PUBLIC        pStringDscr
   B:0020H.3       PUBLIC        Sleep
-BL51 BANKED LINKER/LOCATER V5.11                                                      01/26/2024  23:30:14  PAGE 17
-
-
   -------         PROC          MAIN
   -------         DO            
   D:0008H         SYMBOL        i
@@ -1008,6 +959,9 @@ SYMBOL TABLE OF MODULE:  EP_Interrupts (EP_INTERRUPTS)
   C:03CDH         LINE#         156
   C:03D4H         LINE#         157
   C:03D4H         LINE#         158
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  10/03/2026  17:13:57  PAGE 17
+
+
   C:03D9H         LINE#         159
   C:03D9H         LINE#         165
   C:03E0H         LINE#         167
@@ -1019,9 +973,6 @@ SYMBOL TABLE OF MODULE:  EP_Interrupts (EP_INTERRUPTS)
   C:03EBH         LINE#         180
   C:03EBH         LINE#         181
   C:03EEH         LINE#         182
-BL51 BANKED LINKER/LOCATER V5.11                                                      01/26/2024  23:30:14  PAGE 18
-
-
   C:03F0H         LINE#         183
   C:03F0H         LINE#         190
   C:03F3H         LINE#         191
@@ -1068,6 +1019,9 @@ SYMBOL TABLE OF MODULE:  EP_Interrupts (EP_INTERRUPTS)
   C:00E3H         LINE#         244
   C:00E9H         LINE#         245
   C:00EBH         LINE#         246
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  10/03/2026  17:13:57  PAGE 18
+
+
   C:00EDH         LINE#         252
   C:00EDH         LINE#         253
   C:00F3H         LINE#         254
@@ -1079,9 +1033,6 @@ SYMBOL TABLE OF MODULE:  EP_Interrupts (EP_INTERRUPTS)
   C:0101H         LINE#         260
   C:0101H         LINE#         261
   C:0114H         LINE#         262
-BL51 BANKED LINKER/LOCATER V5.11                                                      01/26/2024  23:30:14  PAGE 19
-
-
   C:0114H         LINE#         263
   C:0119H         LINE#         264
   C:011EH         LINE#         265
@@ -1128,6 +1079,9 @@ SYMBOL TABLE OF MODULE:  EP_Interrupts (EP_INTERRUPTS)
   C:01B9H         LINE#         307
   C:01B9H         LINE#         308
   C:01B9H         LINE#         309
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  10/03/2026  17:13:57  PAGE 19
+
+
   C:01B9H         LINE#         310
   C:01BCH         LINE#         311
   C:01BCH         LINE#         312
@@ -1139,9 +1093,6 @@ SYMBOL TABLE OF MODULE:  EP_Interrupts (EP_INTERRUPTS)
   C:01DFH         LINE#         319
   C:01DFH         LINE#         320
   C:01E2H         LINE#         321
-BL51 BANKED LINKER/LOCATER V5.11                                                      01/26/2024  23:30:14  PAGE 20
-
-
   C:01E2H         LINE#         322
   C:01E8H         LINE#         323
   C:01E8H         LINE#         324
@@ -1188,6 +1139,9 @@ SYMBOL TABLE OF MODULE:  EP_Interrupts (EP_INTERRUPTS)
   C:0500H         PUBLIC        DEVICEDSCR
   C:0512H         PUBLIC        DEVICEQUALDSCR
   C:0558H         PUBLIC        FULLSPEEDCONFIGDSCR
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  10/03/2026  17:13:57  PAGE 20
+
+
   C:051CH         PUBLIC        HIGHSPEEDCONFIGDSCR
   C:0594H         PUBLIC        STRINGDSCR
   C:05C4H         PUBLIC        USERDSCR
@@ -1199,9 +1153,6 @@ SYMBOL TABLE OF MODULE:  EP_Interrupts (EP_INTERRUPTS)
   N:000AH         SYMBOL        DSCR_DEVQUAL_LEN
   N:0005H         SYMBOL        DSCR_ENDPNT
   N:0007H         SYMBOL        DSCR_ENDPNT_LEN
-BL51 BANKED LINKER/LOCATER V5.11                                                      01/26/2024  23:30:14  PAGE 21
-
-
   N:0004H         SYMBOL        DSCR_INTRFC
   N:0009H         SYMBOL        DSCR_INTRFC_LEN
   N:0003H         SYMBOL        DSCR_STRING
@@ -1248,6 +1199,9 @@ SYMBOL TABLE OF MODULE:  EP_Interrupts (EP_INTERRUPTS)
   C:0648H         LINE#         97
   C:064CH         LINE#         99
   C:0650H         LINE#         101
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  10/03/2026  17:13:57  PAGE 21
+
+
   C:0654H         LINE#         103
   C:0658H         LINE#         105
   C:065CH         LINE#         107
@@ -1259,9 +1213,6 @@ SYMBOL TABLE OF MODULE:  EP_Interrupts (EP_INTERRUPTS)
   C:0674H         LINE#         119
   C:0678H         LINE#         121
   C:067CH         LINE#         123
-BL51 BANKED LINKER/LOCATER V5.11                                                      01/26/2024  23:30:14  PAGE 22
-
-
   C:0680H         LINE#         126
   C:0684H         LINE#         128
   C:0688H         LINE#         130
@@ -1308,6 +1259,9 @@ SYMBOL TABLE OF MODULE:  EP_Interrupts (EP_INTERRUPTS)
   C:085AH         LINE#         47
   C:0861H         LINE#         49
   C:0867H         LINE#         50
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  10/03/2026  17:13:57  PAGE 22
+
+
   C:086BH         LINE#         51
   C:086EH         LINE#         53
   C:0875H         LINE#         54
@@ -1319,9 +1273,6 @@ SYMBOL TABLE OF MODULE:  EP_Interrupts (EP_INTERRUPTS)
   X:E652H         PUBLIC        EP4FIFOIE
   X:E668H         PUBLIC        INTSETUP
   X:E600H         PUBLIC        CPUCS
-BL51 BANKED LINKER/LOCATER V5.11                                                      01/26/2024  23:30:14  PAGE 23
-
-
   X:E654H         PUBLIC        EP6FIFOIE
   X:E680H         PUBLIC        USBCS
   X:E65FH         PUBLIC        EPIRQ
@@ -1368,6 +1319,9 @@ SYMBOL TABLE OF MODULE:  EP_Interrupts (EP_INTERRUPTS)
   X:E6CBH         PUBLIC        FLOWSTB
   X:E65EH         PUBLIC        EPIE
   X:E685H         PUBLIC        USBFRAMEL
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  10/03/2026  17:13:57  PAGE 23
+
+
   X:E681H         PUBLIC        SUSPEND
   X:E60CH         PUBLIC        GPIFHOLDAMOUNT
   X:E6D4H         PUBLIC        EP2GPIFTRIG
@@ -1379,9 +1333,6 @@ SYMBOL TABLE OF MODULE:  EP_Interrupts (EP_INTERRUPTS)
   X:E6FAH         PUBLIC        USBTEST
   X:E6B3H         PUBLIC        SUDPTRH
   X:E6ECH         PUBLIC        EP8GPIFTRIG
-BL51 BANKED LINKER/LOCATER V5.11                                                      01/26/2024  23:30:14  PAGE 24
-
-
   X:E6D2H         PUBLIC        EP2GPIFFLGSEL
   X:E611H         PUBLIC        EP1INCFG
   X:E6B4H         PUBLIC        SUDPTRL
@@ -1428,6 +1379,9 @@ SYMBOL TABLE OF MODULE:  EP_Interrupts (EP_INTERRUPTS)
   X:E624H         PUBLIC        EP6AUTOINLENH
   X:E621H         PUBLIC        EP2AUTOINLENL
   X:E601H         PUBLIC        IFCONFIG
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  10/03/2026  17:13:57  PAGE 24
+
+
   X:E6FCH         PUBLIC        CT2
   X:E6B5H         PUBLIC        SUDPTRCTL
   X:E667H         PUBLIC        INT4IVEC
@@ -1439,9 +1393,6 @@ SYMBOL TABLE OF MODULE:  EP_Interrupts (EP_INTERRUPTS)
   X:F000H         PUBLIC        EP2FIFOBUF
   X:E6C5H         PUBLIC        GPIFADRL
   X:E625H         PUBLIC        EP6AUTOINLENL
-BL51 BANKED LINKER/LOCATER V5.11                                                      01/26/2024  23:30:14  PAGE 25
-
-
   X:E630H         PUBLIC        EP2FIFOPFH
   X:F400H         PUBLIC        EP4FIFOBUF
   X:E67EH         PUBLIC        UDMACRCL
@@ -1478,7 +1429,7 @@ SYMBOL TABLE OF MODULE:  EP_Interrupts (EP_INTERRUPTS)
   X:E653H         PUBLIC        EP4FIFOIRQ
   X:E6C1H         PUBLIC        GPIFIDLECS
   X:E6A3H         PUBLIC        EP2CS
-  X:E509H         PUBLIC        GPCR2
+  X:E50DH         PUBLIC        GPCR2
   X:E67AH         PUBLIC        I2CTL
   X:E655H         PUBLIC        EP6FIFOIRQ
   X:E603H         PUBLIC        PINFLAGSCD
@@ -1488,6 +1439,9 @@ SYMBOL TABLE OF MODULE:  EP_Interrupts (EP_INTERRUPTS)
   X:E6A5H         PUBLIC        EP6CS
   X:E6A6H         PUBLIC        EP8CS
   X:E68FH         PUBLIC        EP1INBC
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  10/03/2026  17:13:57  PAGE 25
+
+
   X:E662H         PUBLIC        USBERRIE
   X:E6C8H         PUBLIC        FLOWEQ0CTL
   X:E6C9H         PUBLIC        FLOWEQ1CTL
@@ -1499,9 +1453,6 @@ SYMBOL TABLE OF MODULE:  EP_Interrupts (EP_INTERRUPTS)
   X:E6B8H         PUBLIC        SETUPDAT
   X:E62AH         PUBLIC        ECC1B0
   X:E62DH         PUBLIC        ECC2B0
-BL51 BANKED LINKER/LOCATER V5.11                                                      01/26/2024  23:30:14  PAGE 26
-
-
   X:E62BH         PUBLIC        ECC1B1
   X:E6F3H         PUBLIC        GPIFREADYCFG
   X:E62EH         PUBLIC        ECC2B1
@@ -1548,6 +1499,9 @@ SYMBOL TABLE OF MODULE:  EP_Interrupts (EP_INTERRUPTS)
   D:009BH         SYMBOL        AUTOPTR1L
   D:009AH         SYMBOL        AUTOPTRH1
   D:009DH         SYMBOL        AUTOPTRH2
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  10/03/2026  17:13:57  PAGE 26
+
+
   D:009BH         SYMBOL        AUTOPTRL1
   D:009EH         SYMBOL        AUTOPTRL2
   D:00AFH         SYMBOL        AUTOPTRSETUP
@@ -1559,9 +1513,6 @@ SYMBOL TABLE OF MODULE:  EP_Interrupts (EP_INTERRUPTS)
   X:E665H         SYMBOL        CLRERRCNT
   X:E600H         SYMBOL        CPUCS
   B:00C8H.0       SYMBOL        CP_RL2
-BL51 BANKED LINKER/LOCATER V5.11                                                      01/26/2024  23:30:14  PAGE 27
-
-
   X:E6FBH         SYMBOL        CT1
   X:E6FCH         SYMBOL        CT2
   X:E6FDH         SYMBOL        CT3
@@ -1598,16 +1549,19 @@ SYMBOL TABLE OF MODULE:  EP_Interrupts (EP_INTERRUPTS)
   X:E68BH         SYMBOL        EP0BCL
   X:E740H         SYMBOL        EP0BUF
   X:E6A0H         SYMBOL        EP0CS
-  X:E780H         SYMBOL        EP10UTBUF
   X:E68FH         SYMBOL        EP1INBC
   X:E7C0H         SYMBOL        EP1INBUF
   X:E611H         SYMBOL        EP1INCFG
   X:E6A2H         SYMBOL        EP1INCS
   X:E68DH         SYMBOL        EP1OUTBC
+  X:E780H         SYMBOL        EP1OUTBUF
   X:E610H         SYMBOL        EP1OUTCFG
   X:E6A1H         SYMBOL        EP1OUTCS
   D:00AAH         SYMBOL        EP2468STAT
   D:00ABH         SYMBOL        EP24FIFOFLGS
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  10/03/2026  17:13:57  PAGE 27
+
+
   X:E620H         SYMBOL        EP2AUTOINLENH
   X:E621H         SYMBOL        EP2AUTOINLENL
   X:E690H         SYMBOL        EP2BCH
@@ -1619,9 +1573,6 @@ SYMBOL TABLE OF MODULE:  EP_Interrupts (EP_INTERRUPTS)
   X:F000H         SYMBOL        EP2FIFOBUF
   X:E618H         SYMBOL        EP2FIFOCFG
   X:E6A7H         SYMBOL        EP2FIFOFLGS
-BL51 BANKED LINKER/LOCATER V5.11                                                      01/26/2024  23:30:14  PAGE 28
-
-
   X:E650H         SYMBOL        EP2FIFOIE
   X:E651H         SYMBOL        EP2FIFOIRQ
   X:E630H         SYMBOL        EP2FIFOPFH
@@ -1668,6 +1619,9 @@ SYMBOL TABLE OF MODULE:  EP_Interrupts (EP_INTERRUPTS)
   X:E654H         SYMBOL        EP6FIFOIE
   X:E655H         SYMBOL        EP6FIFOIRQ
   X:E634H         SYMBOL        EP6FIFOPFH
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  10/03/2026  17:13:57  PAGE 28
+
+
   X:E635H         SYMBOL        EP6FIFOPFL
   X:E6E2H         SYMBOL        EP6GPIFFLGSEL
   X:E6E3H         SYMBOL        EP6GPIFPFSTOP
@@ -1679,9 +1633,6 @@ SYMBOL TABLE OF MODULE:  EP_Interrupts (EP_INTERRUPTS)
   X:E627H         SYMBOL        EP8AUTOINLENL
   X:E69CH         SYMBOL        EP8BCH
   X:E69DH         SYMBOL        EP8BCL
-BL51 BANKED LINKER/LOCATER V5.11                                                      01/26/2024  23:30:14  PAGE 29
-
-
   X:E615H         SYMBOL        EP8CFG
   X:E6A6H         SYMBOL        EP8CS
   X:E6B1H         SYMBOL        EP8FIFOBCH
@@ -1728,6 +1679,9 @@ SYMBOL TABLE OF MODULE:  EP_Interrupts (EP_INTERRUPTS)
   X:E6C6H         SYMBOL        FLOWSTATE
   X:E6CBH         SYMBOL        FLOWSTB
   X:E6CDH         SYMBOL        FLOWSTBHPERIOD
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  10/03/2026  17:13:57  PAGE 29
+
+
   X:E687H         SYMBOL        FNADDR
   X:E509H         SYMBOL        GPCR2
   X:E6F5H         SYMBOL        GPIFABORT
@@ -1739,9 +1693,6 @@ SYMBOL TABLE OF MODULE:  EP_Interrupts (EP_INTERRUPTS)
   X:E6C2H         SYMBOL        GPIFIDLECTL
   X:E660H         SYMBOL        GPIFIE
   X:E661H         SYMBOL        GPIFIRQ
-BL51 BANKED LINKER/LOCATER V5.11                                                      01/26/2024  23:30:14  PAGE 30
-
-
   X:E6F3H         SYMBOL        GPIFREADYCFG
   X:E6F4H         SYMBOL        GPIFREADYSTAT
   D:00BDH         SYMBOL        GPIFSGLDATH
@@ -1788,9 +1739,44 @@ SYMBOL TABLE OF MODULE:  EP_Interrupts (EP_INTERRUPTS)
   D:00B5H         SYMBOL        OED
   D:00B6H         SYMBOL        OEE
   X:E649H         SYMBOL        OUTPKTEND
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  10/03/2026  17:13:57  PAGE 30
+
+
   B:00D0H.2       SYMBOL        OV
   B:00D0H.0       SYMBOL        P
+  B:0080H.0       SYMBOL        PA0
+  B:0080H.1       SYMBOL        PA1
+  B:0080H.2       SYMBOL        PA2
+  B:0080H.3       SYMBOL        PA3
+  B:0080H.4       SYMBOL        PA4
+  B:0080H.5       SYMBOL        PA5
+  B:0080H.6       SYMBOL        PA6
+  B:0080H.7       SYMBOL        PA7
+  B:0090H.0       SYMBOL        PB0
+  B:0090H.1       SYMBOL        PB1
+  B:0090H.2       SYMBOL        PB2
+  B:0090H.3       SYMBOL        PB3
+  B:0090H.4       SYMBOL        PB4
+  B:0090H.5       SYMBOL        PB5
+  B:0090H.6       SYMBOL        PB6
+  B:0090H.7       SYMBOL        PB7
+  B:00A0H.0       SYMBOL        PC0
+  B:00A0H.1       SYMBOL        PC1
+  B:00A0H.2       SYMBOL        PC2
+  B:00A0H.3       SYMBOL        PC3
+  B:00A0H.4       SYMBOL        PC4
+  B:00A0H.5       SYMBOL        PC5
+  B:00A0H.6       SYMBOL        PC6
+  B:00A0H.7       SYMBOL        PC7
   D:0087H         SYMBOL        PCON
+  B:00B0H.0       SYMBOL        PD0
+  B:00B0H.1       SYMBOL        PD1
+  B:00B0H.2       SYMBOL        PD2
+  B:00B0H.3       SYMBOL        PD3
+  B:00B0H.4       SYMBOL        PD4
+  B:00B0H.5       SYMBOL        PD5
+  B:00B0H.6       SYMBOL        PD6
+  B:00B0H.7       SYMBOL        PD7
   B:00F8H.1       SYMBOL        PI2C
   X:E602H         SYMBOL        PINFLAGSAB
   X:E603H         SYMBOL        PINFLAGSCD
@@ -1799,9 +1785,6 @@ SYMBOL TABLE OF MODULE:  EP_Interrupts (EP_INTERRUPTS)
   X:E672H         SYMBOL        PORTECFG
   B:00B8H.4       SYMBOL        PS0
   B:00B8H.6       SYMBOL        PS1
-BL51 BANKED LINKER/LOCATER V5.11                                                      01/26/2024  23:30:14  PAGE 31
-
-
   D:00D0H         SYMBOL        PSW
   B:00B8H.1       SYMBOL        PT0
   B:00B8H.3       SYMBOL        PT1
@@ -1816,6 +1799,9 @@ SYMBOL TABLE OF MODULE:  EP_Interrupts (EP_INTERRUPTS)
   B:00C8H.5       SYMBOL        RCLK
   B:0098H.4       SYMBOL        REN
   B:00C0H.4       SYMBOL        REN1
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  10/03/2026  17:13:57  PAGE 31
+
+
   B:00D8H.4       SYMBOL        RESI
   X:E480H         SYMBOL        RES_WAVEDATA_END
   X:E60BH         SYMBOL        REVCTL
@@ -1828,7 +1814,6 @@ SYMBOL TABLE OF MODULE:  EP_Interrupts (EP_INTERRUPTS)
   D:00C1H         SYMBOL        SBUF1
   D:0098H         SYMBOL        SCON0
   D:00C0H         SYMBOL        SCON1
-  B:0080H.6       SYMBOL        SEL
   X:E6B8H         SYMBOL        SETUPDAT
   B:0098H.7       SYMBOL        SM0
   B:00C0H.7       SYMBOL        SM01
@@ -1859,9 +1844,6 @@ SYMBOL TABLE OF MODULE:  EP_Interrupts (EP_INTERRUPTS)
   B:00C0H.1       SYMBOL        TI1
   D:008AH         SYMBOL        TL0
   D:008BH         SYMBOL        TL1
-BL51 BANKED LINKER/LOCATER V5.11                                                      01/26/2024  23:30:14  PAGE 32
-
-
   D:00CCH         SYMBOL        TL2
   D:0089H         SYMBOL        TMOD
   X:E683H         SYMBOL        TOGCTL
@@ -1877,6 +1859,9 @@ SYMBOL TABLE OF MODULE:  EP_Interrupts (EP_INTERRUPTS)
   X:E663H         SYMBOL        USBERRIRQ
   X:E684H         SYMBOL        USBFRAMEH
   X:E685H         SYMBOL        USBFRAMEL
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  10/03/2026  17:13:57  PAGE 32
+
+
   X:E65CH         SYMBOL        USBIE
   X:E65DH         SYMBOL        USBIRQ
   X:E6FAH         SYMBOL        USBTEST
@@ -1919,9 +1904,6 @@ SYMBOL TABLE OF MODULE:  EP_Interrupts (EP_INTERRUPTS)
   -------         MODULE        DELAY1MS
   C:08F5H         SEGMENT       EZUSB
   C:0909H         PUBLIC        EZUSB_DELAY1MS
-BL51 BANKED LINKER/LOCATER V5.11                                                      01/26/2024  23:30:14  PAGE 33
-
-
   B:00D0H.6       SYMBOL        AC
   D:00E0H         SYMBOL        ACC
   D:009AH         SYMBOL        APTR1H
@@ -1937,6 +1919,9 @@ SYMBOL TABLE OF MODULE:  EP_Interrupts (EP_INTERRUPTS)
   X:E606H         SYMBOL        BPADDRH
   X:E607H         SYMBOL        BPADDRL
   X:E605H         SYMBOL        BREAKPT
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  10/03/2026  17:13:57  PAGE 33
+
+
   D:008EH         SYMBOL        CKCON
   X:E665H         SYMBOL        CLRERRCNT
   X:E600H         SYMBOL        CPUCS
@@ -1978,15 +1963,12 @@ SYMBOL TABLE OF MODULE:  EP_Interrupts (EP_INTERRUPTS)
   X:E68BH         SYMBOL        EP0BCL
   X:E740H         SYMBOL        EP0BUF
   X:E6A0H         SYMBOL        EP0CS
-  X:E780H         SYMBOL        EP10UTBUF
-BL51 BANKED LINKER/LOCATER V5.11                                                      01/26/2024  23:30:14  PAGE 34
-
-
   X:E68FH         SYMBOL        EP1INBC
   X:E7C0H         SYMBOL        EP1INBUF
   X:E611H         SYMBOL        EP1INCFG
   X:E6A2H         SYMBOL        EP1INCS
   X:E68DH         SYMBOL        EP1OUTBC
+  X:E780H         SYMBOL        EP1OUTBUF
   X:E610H         SYMBOL        EP1OUTCFG
   X:E6A1H         SYMBOL        EP1OUTCS
   D:00AAH         SYMBOL        EP2468STAT
@@ -1997,6 +1979,9 @@ SYMBOL TABLE OF MODULE:  EP_Interrupts (EP_INTERRUPTS)
   X:E691H         SYMBOL        EP2BCL
   X:E612H         SYMBOL        EP2CFG
   X:E6A3H         SYMBOL        EP2CS
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  10/03/2026  17:13:57  PAGE 34
+
+
   X:E6ABH         SYMBOL        EP2FIFOBCH
   X:E6ACH         SYMBOL        EP2FIFOBCL
   X:F000H         SYMBOL        EP2FIFOBUF
@@ -2039,9 +2024,6 @@ SYMBOL TABLE OF MODULE:  EP_Interrupts (EP_INTERRUPTS)
   X:E698H         SYMBOL        EP6BCH
   X:E699H         SYMBOL        EP6BCL
   X:E614H         SYMBOL        EP6CFG
-BL51 BANKED LINKER/LOCATER V5.11                                                      01/26/2024  23:30:14  PAGE 35
-
-
   X:E6A5H         SYMBOL        EP6CS
   X:E6AFH         SYMBOL        EP6FIFOBCH
   X:E6B0H         SYMBOL        EP6FIFOBCL
@@ -2057,6 +2039,9 @@ SYMBOL TABLE OF MODULE:  EP_Interrupts (EP_INTERRUPTS)
   X:E6D0H         SYMBOL        EP6GPIFTCH
   X:E6D1H         SYMBOL        EP6GPIFTCL
   X:E6E4H         SYMBOL        EP6GPIFTRIG
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  10/03/2026  17:13:57  PAGE 35
+
+
   X:E642H         SYMBOL        EP6ISOINPKTS
   X:E626H         SYMBOL        EP8AUTOINLENH
   X:E627H         SYMBOL        EP8AUTOINLENL
@@ -2099,9 +2084,6 @@ SYMBOL TABLE OF MODULE:  EP_Interrupts (EP_INTERRUPTS)
   X:E67CH         SYMBOL        EXTAUTODAT2
   B:00D0H.5       SYMBOL        F0
   X:E609H         SYMBOL        FIFOPINPOLAR
-BL51 BANKED LINKER/LOCATER V5.11                                                      01/26/2024  23:30:14  PAGE 36
-
-
   X:E604H         SYMBOL        FIFORESET
   B:00D0H.1       SYMBOL        FL
   X:E6CCH         SYMBOL        FLOWEDGE
@@ -2117,6 +2099,9 @@ SYMBOL TABLE OF MODULE:  EP_Interrupts (EP_INTERRUPTS)
   X:E6C4H         SYMBOL        GPIFADRH
   X:E6C5H         SYMBOL        GPIFADRL
   X:E6C3H         SYMBOL        GPIFCTLCFG
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  10/03/2026  17:13:57  PAGE 36
+
+
   X:E60CH         SYMBOL        GPIFHOLDAMOUNT
   X:E6C1H         SYMBOL        GPIFIDLECS
   X:E6C2H         SYMBOL        GPIFIDLECTL
@@ -2159,9 +2144,6 @@ SYMBOL TABLE OF MODULE:  EP_Interrupts (EP_INTERRUPTS)
   B:0088H.0       SYMBOL        IT0
   B:0088H.2       SYMBOL        IT1
   C:0912H         SYMBOL        LOOP
-BL51 BANKED LINKER/LOCATER V5.11                                                      01/26/2024  23:30:14  PAGE 37
-
-
   X:E686H         SYMBOL        MICROFRAME
   D:0092H         SYMBOL        MPAGE
   X:E65AH         SYMBOL        NAKIE
@@ -2174,7 +2156,42 @@ SYMBOL TABLE OF MODULE:  EP_Interrupts (EP_INTERRUPTS)
   X:E649H         SYMBOL        OUTPKTEND
   B:00D0H.2       SYMBOL        OV
   B:00D0H.0       SYMBOL        P
+  B:0080H.0       SYMBOL        PA0
+  B:0080H.1       SYMBOL        PA1
+  B:0080H.2       SYMBOL        PA2
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  10/03/2026  17:13:57  PAGE 37
+
+
+  B:0080H.3       SYMBOL        PA3
+  B:0080H.4       SYMBOL        PA4
+  B:0080H.5       SYMBOL        PA5
+  B:0080H.6       SYMBOL        PA6
+  B:0080H.7       SYMBOL        PA7
+  B:0090H.0       SYMBOL        PB0
+  B:0090H.1       SYMBOL        PB1
+  B:0090H.2       SYMBOL        PB2
+  B:0090H.3       SYMBOL        PB3
+  B:0090H.4       SYMBOL        PB4
+  B:0090H.5       SYMBOL        PB5
+  B:0090H.6       SYMBOL        PB6
+  B:0090H.7       SYMBOL        PB7
+  B:00A0H.0       SYMBOL        PC0
+  B:00A0H.1       SYMBOL        PC1
+  B:00A0H.2       SYMBOL        PC2
+  B:00A0H.3       SYMBOL        PC3
+  B:00A0H.4       SYMBOL        PC4
+  B:00A0H.5       SYMBOL        PC5
+  B:00A0H.6       SYMBOL        PC6
+  B:00A0H.7       SYMBOL        PC7
   D:0087H         SYMBOL        PCON
+  B:00B0H.0       SYMBOL        PD0
+  B:00B0H.1       SYMBOL        PD1
+  B:00B0H.2       SYMBOL        PD2
+  B:00B0H.3       SYMBOL        PD3
+  B:00B0H.4       SYMBOL        PD4
+  B:00B0H.5       SYMBOL        PD5
+  B:00B0H.6       SYMBOL        PD6
+  B:00B0H.7       SYMBOL        PD7
   B:00F8H.1       SYMBOL        PI2C
   X:E602H         SYMBOL        PINFLAGSAB
   X:E603H         SYMBOL        PINFLAGSCD
@@ -2202,6 +2219,9 @@ SYMBOL TABLE OF MODULE:  EP_Interrupts (EP_INTERRUPTS)
   X:E60BH         SYMBOL        REVCTL
   X:E60AH         SYMBOL        REVID
   B:0098H.0       SYMBOL        RI
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  10/03/2026  17:13:57  PAGE 38
+
+
   B:00C0H.0       SYMBOL        RI1
   B:00D0H.3       SYMBOL        RS0
   B:00D0H.4       SYMBOL        RS1
@@ -2209,7 +2229,6 @@ SYMBOL TABLE OF MODULE:  EP_Interrupts (EP_INTERRUPTS)
   D:00C1H         SYMBOL        SBUF1
   D:0098H         SYMBOL        SCON0
   D:00C0H         SYMBOL        SCON1
-  B:0080H.6       SYMBOL        SEL
   X:E6B8H         SYMBOL        SETUPDAT
   B:0098H.7       SYMBOL        SM0
   B:00C0H.7       SYMBOL        SM01
@@ -2219,9 +2238,6 @@ SYMBOL TABLE OF MODULE:  EP_Interrupts (EP_INTERRUPTS)
   B:00C0H.5       SYMBOL        SM21
   B:00D8H.7       SYMBOL        SMOD1
   D:0081H         SYMBOL        SP
-BL51 BANKED LINKER/LOCATER V5.11                                                      01/26/2024  23:30:14  PAGE 38
-
-
   X:E6B5H         SYMBOL        SUDPTRCTL
   X:E6B3H         SYMBOL        SUDPTRH
   X:E6B4H         SYMBOL        SUDPTRL
@@ -2263,6 +2279,9 @@ SYMBOL TABLE OF MODULE:  EP_Interrupts (EP_INTERRUPTS)
   X:E682H         SYMBOL        WAKEUPCS
   X:E6F0H         SYMBOL        XGPIFSGLDATH
   X:E6F2H         SYMBOL        XGPIFSGLDATLNOX
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  10/03/2026  17:13:57  PAGE 39
+
+
   X:E6F1H         SYMBOL        XGPIFSGLDATLX
   C:0909H         LINE#         48
   C:090BH         LINE#         49
@@ -2278,9 +2297,6 @@ SYMBOL TABLE OF MODULE:  EP_Interrupts (EP_INTERRUPTS)
   -------         MODULE        ?C?ULCMP
   C:09ECH         PUBLIC        ?C?ULCMP
   -------         ENDMOD        ?C?ULCMP
-
-BL51 BANKED LINKER/LOCATER V5.11                                                      01/26/2024  23:30:14  PAGE 39
-
 
 Program Size: data=43.5 xdata=4473 code=2519
 LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

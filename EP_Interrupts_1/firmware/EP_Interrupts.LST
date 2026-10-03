@@ -1,10 +1,10 @@
-C51 COMPILER V7.20   EP_INTERRUPTS                                                         01/26/2024 23:30:14 PAGE 1   
+C51 COMPILER V9.60.7.0   EP_INTERRUPTS                                                     10/03/2026 17:13:57 PAGE 1   
 
 
-C51 COMPILER V7.20, COMPILATION OF MODULE EP_INTERRUPTS
+C51 COMPILER V9.60.7.0, COMPILATION OF MODULE EP_INTERRUPTS
 OBJECT MODULE PLACED IN EP_Interrupts.OBJ
-COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE EP_Interrupts.c BROWSE INCDIR(C:\Cypress\USB\CY3684_EZ-USB_FX2LP_DVK\1.1\Ta
-                    -rget\Inc\) DEBUG OBJECTEXTEND
+COMPILER INVOKED BY: C:\Keil_v5\C51\BIN\C51.EXE EP_Interrupts.c OPTIMIZE(8,SPEED) BROWSE INCDIR(C:\Cypress\USB\CY3684_EZ
+                    --USB_FX2LP_DVK\1.1\Target\Inc\) DEBUG OBJECTEXTEND TABS(2)
 
 line level    source
 
@@ -62,7 +62,7 @@ line level    source
   52   1      
   53   1        // default: all endpoints have their VALID bit set
   54   1        // default: TYPE1 = 1 and TYPE0 = 0 --> BULK  
-C51 COMPILER V7.20   EP_INTERRUPTS                                                         01/26/2024 23:30:14 PAGE 2   
+C51 COMPILER V9.60.7.0   EP_INTERRUPTS                                                     10/03/2026 17:13:57 PAGE 2   
 
   55   1        // default: EP2 and EP4 DIR bits are 0 (OUT direction)
   56   1        // default: EP6 and EP8 DIR bits are 1 (IN direction)
@@ -81,7 +81,7 @@ line level    source
   69   1        EP8CFG = 0xE0; //BULK
   70   1      
   71   1        // out endpoints do not come up armed.  Arm EP1, EP2 and EP4 OUT  endpoints
-  72   1         EP1OUTBC = 0x40;                             // arm the EP1 OUT endpoint by writing to the byte count
+  72   1         EP1OUTBC = 0x40;       // arm the EP1 OUT endpoint by writing to the byte count
   73   1        // since the defaults are double buffered we must write dummy byte counts twice
   74   1        SYNCDELAY;                    
   75   1        EP2BCL = 0x80;                // arm EP2OUT by writing byte count w/skip.
@@ -126,7 +126,7 @@ line level    source
  114          {
  115   1         return(TRUE);
  116   1      }
-C51 COMPILER V7.20   EP_INTERRUPTS                                                         01/26/2024 23:30:14 PAGE 3   
+C51 COMPILER V9.60.7.0   EP_INTERRUPTS                                                     10/03/2026 17:13:57 PAGE 3   
 
  117          
  118          BOOL DR_SetConfiguration(void)   // Called when a Set Configuration command is received
@@ -190,7 +190,7 @@ line level    source
  176   2              SYNCDELAY;                    
  177   2              FIFORESET = tmp;
  178   2              break;
-C51 COMPILER V7.20   EP_INTERRUPTS                                                         01/26/2024 23:30:14 PAGE 4   
+C51 COMPILER V9.60.7.0   EP_INTERRUPTS                                                     10/03/2026 17:13:57 PAGE 4   
 
  179   2           default:
  180   2              return(TRUE);
@@ -254,7 +254,7 @@ line level    source
  238   2            ((CONFIGDSCR xdata *) pOtherConfigDscr)->type = OTHERSPEED_DSCR;
  239   2         }
  240   1      
-C51 COMPILER V7.20   EP_INTERRUPTS                                                         01/26/2024 23:30:14 PAGE 5   
+C51 COMPILER V9.60.7.0   EP_INTERRUPTS                                                     10/03/2026 17:13:57 PAGE 5   
 
  241   1         EZUSB_IRQ_CLEAR();
  242   1         USBIRQ = bmHSGRANT;
@@ -273,29 +273,29 @@ line level    source
  255   1      }
  256          void ISR_Ep1in(void) interrupt 0
  257          {
- 258   1              EP1OUTBC = 64;
+ 258   1        EP1OUTBC = 64;
  259   1      
- 260   1              EZUSB_IRQ_CLEAR();
- 261   1              EPIRQ = bmBIT2;
+ 260   1        EZUSB_IRQ_CLEAR();
+ 261   1        EPIRQ = bmBIT2;
  262   1      }
  263          void ISR_Ep1out(void) interrupt 0
  264          {
  265   1      
- 266   1              BYTE count;
- 267   1              BYTE i;
- 268   1              
- 269   1              count = EP1OUTBC;
- 270   1              if(!(EP1INCS & bmBIT1))
- 271   1              {
- 272   2                      for (i=0;i<count; i++)
- 273   2                      {
- 274   3                              EP1INBUF[i]=EP1OUTBUF[i];
- 275   3                      }
- 276   2                      EP1INBC = count;
- 277   2              }
+ 266   1        BYTE count;
+ 267   1        BYTE i;
+ 268   1        
+ 269   1        count = EP1OUTBC;
+ 270   1        if(!(EP1INCS & bmBIT1))
+ 271   1        {
+ 272   2          for (i=0;i<count; i++)
+ 273   2          {
+ 274   3            EP1INBUF[i]=EP1OUTBUF[i];
+ 275   3          }
+ 276   2          EP1INBC = count;
+ 277   2        }
  278   1      
- 279   1              EZUSB_IRQ_CLEAR();
- 280   1              EPIRQ = bmBIT3;
+ 279   1        EZUSB_IRQ_CLEAR();
+ 280   1        EPIRQ = bmBIT3;
  281   1      }
  282          
  283          void ISR_Ep2inout(void) interrupt 0
@@ -318,7 +318,7 @@ line level    source
  300   2            {
  301   3               // setup to transfer EP2OUT buffer to EP6IN buffer using AUTOPOINTER(s)
  302   3               EXTAUTODAT2 = EXTAUTODAT1;
-C51 COMPILER V7.20   EP_INTERRUPTS                                                         01/26/2024 23:30:14 PAGE 6   
+C51 COMPILER V9.60.7.0   EP_INTERRUPTS                                                     10/03/2026 17:13:57 PAGE 6   
 
  303   3            }
  304   2            EP6BCH = EP2BCH;  
@@ -327,8 +327,8 @@ line level    source
  307   2            SYNCDELAY;                    
  308   2         }
  309   1      
- 310   1              EZUSB_IRQ_CLEAR();
- 311   1              EPIRQ = bmBIT4;
+ 310   1        EZUSB_IRQ_CLEAR();
+ 311   1        EPIRQ = bmBIT4;
  312   1      }
  313          
  314          void ISR_Ep4inout(void) interrupt 0
@@ -336,33 +336,33 @@ line level    source
  316   1        WORD count;
  317   1        WORD  i;
  318   1      
- 319   1              if(!(EP2468STAT & bmEP4EMPTY))
- 320   1              { // check EP4 EMPTY(busy) bit in EP2468STAT (SFR), core set's this bit when FIFO is empty
- 321   2              if(!(EP2468STAT & bmEP8FULL))
- 322   2                   {  // check EP8 FULL(busy) bit in EP2468STAT (SFR), core set's this bit when FIFO is full
- 323   3                      APTR1H = MSB( &EP4FIFOBUF );
- 324   3                      APTR1L = LSB( &EP4FIFOBUF );
- 325   3              
- 326   3                      AUTOPTRH2 = MSB( &EP8FIFOBUF );
- 327   3                      AUTOPTRL2 = LSB( &EP8FIFOBUF );
- 328   3              
- 329   3                      count = (EP4BCH << 8) + EP4BCL;
- 330   3              
- 331   3                      // loop EP4OUT buffer data to EP8IN
- 332   3                      for( i = 0x0000; i < count; i++ )
- 333   3                      {
- 334   4                         // setup to transfer EP4OUT buffer to EP8IN buffer using AUTOPOINTER(s)
- 335   4                         EXTAUTODAT2 = EXTAUTODAT1;
- 336   4                      }
- 337   3                      EP8BCH = EP4BCH;  
- 338   3                      SYNCDELAY;  
- 339   3                      EP8BCL = EP4BCL;        // arm EP8IN
- 340   3                      SYNCDELAY;                    
- 341   3                   }
- 342   2              }
+ 319   1        if(!(EP2468STAT & bmEP4EMPTY))
+ 320   1          { // check EP4 EMPTY(busy) bit in EP2468STAT (SFR), core set's this bit when FIFO is empty
+ 321   2            if(!(EP2468STAT & bmEP8FULL))
+ 322   2             {  // check EP8 FULL(busy) bit in EP2468STAT (SFR), core set's this bit when FIFO is full
+ 323   3                APTR1H = MSB( &EP4FIFOBUF );
+ 324   3                APTR1L = LSB( &EP4FIFOBUF );
+ 325   3        
+ 326   3                AUTOPTRH2 = MSB( &EP8FIFOBUF );
+ 327   3                AUTOPTRL2 = LSB( &EP8FIFOBUF );
+ 328   3        
+ 329   3                count = (EP4BCH << 8) + EP4BCL;
+ 330   3        
+ 331   3                // loop EP4OUT buffer data to EP8IN
+ 332   3                for( i = 0x0000; i < count; i++ )
+ 333   3                {
+ 334   4                   // setup to transfer EP4OUT buffer to EP8IN buffer using AUTOPOINTER(s)
+ 335   4                   EXTAUTODAT2 = EXTAUTODAT1;
+ 336   4                }
+ 337   3                EP8BCH = EP4BCH;  
+ 338   3                SYNCDELAY;  
+ 339   3                EP8BCL = EP4BCL;        // arm EP8IN
+ 340   3                SYNCDELAY;                    
+ 341   3             }
+ 342   2          }
  343   1      
- 344   1              EZUSB_IRQ_CLEAR();
- 345   1              EPIRQ = bmBIT5;
+ 344   1        EZUSB_IRQ_CLEAR();
+ 345   1        EPIRQ = bmBIT5;
  346   1      
  347   1      }
  348          
@@ -370,19 +370,19 @@ line level    source
  350          {
  351   1          EP2BCL = 0x80;          // re(arm) EP2OUT
  352   1      
- 353   1              EZUSB_IRQ_CLEAR();
- 354   1              EPIRQ = bmBIT6;
+ 353   1        EZUSB_IRQ_CLEAR();
+ 354   1        EPIRQ = bmBIT6;
  355   1      }
  356          
  357          void ISR_Ep8inout(void) interrupt 0
  358          {
  359   1          EP4BCL = 0x80;          // re(arm) EP2OUT
  360   1      
- 361   1              EZUSB_IRQ_CLEAR();
- 362   1              EPIRQ = bmBIT7;
+ 361   1        EZUSB_IRQ_CLEAR();
+ 362   1        EPIRQ = bmBIT7;
  363   1      }
  364          
-C51 COMPILER V7.20   EP_INTERRUPTS                                                         01/26/2024 23:30:14 PAGE 7   
+C51 COMPILER V9.60.7.0   EP_INTERRUPTS                                                     10/03/2026 17:13:57 PAGE 7   
 
  365          void ISR_Ibn(void) interrupt 0
  366          {
@@ -446,7 +446,7 @@ line level    source
  424   1      }
  425          void ISR_Ep2fflag(void) interrupt 0
  426          {
-C51 COMPILER V7.20   EP_INTERRUPTS                                                         01/26/2024 23:30:14 PAGE 8   
+C51 COMPILER V9.60.7.0   EP_INTERRUPTS                                                     10/03/2026 17:13:57 PAGE 8   
 
  427   1      }
  428          void ISR_Ep4fflag(void) interrupt 0

@@ -1,8 +1,8 @@
 "EP_Interrupts.obj",
 "fw.obj",
 "dscr.obj",
-"C:\Cypress\USB\CY3684_EZ-USB_FX2LP_DVK\1.1\Target\Lib\LP\USBJmpTb.OBJ",
-"C:\Cypress\USB\CY3684_EZ-USB_FX2LP_DVK\1.1\Target\Lib\LP\EZUSB.LIB" 
+"C:\Cypress\Cypress Suite USB 3.4.7\Firmware\lib\USBJmpTb.OBJ",
+"C:\Cypress\Cypress Suite USB 3.4.7\Firmware\lib\EZUSB.LIB" 
 TO "EP_Interrupts" 
 RAMSIZE(256) 
 CODE( 0x80 )
